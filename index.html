@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JB Formación Electromecánica Automotriz | Masterclass Gratuita</title>
+  <title>Clase Gratuita | Diagnóstico Eléctrico Automotriz</title>
+  <meta name="description" content="Entrá al grupo privado de WhatsApp y recibí el acceso a la clase gratuita de diagnóstico eléctrico automotriz." />
+
   <style>
     :root {
-      --bg: #0f1115;
-      --bg-soft: #171a21;
-      --card: #1d222b;
+      --bg: #0d1015;
+      --card: #171c24;
       --text: #f5f7fb;
       --muted: #b9c0cc;
       --line: #2a313d;
       --accent: #25d366;
       --accent-dark: #1faa52;
       --warning: #ffd166;
-      --max: 1120px;
-      --radius: 20px;
-      --shadow: 0 20px 60px rgba(0,0,0,.28);
+      --danger: #ff7b72;
+      --max: 980px;
+      --radius: 22px;
+      --shadow: 0 18px 50px rgba(0,0,0,.28);
     }
 
     * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.5;
       background:
         radial-gradient(circle at top right, rgba(37,211,102,.12), transparent 28%),
         radial-gradient(circle at top left, rgba(255,209,102,.08), transparent 22%),
         var(--bg);
-      color: var(--text);
-      line-height: 1.55;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -44,143 +44,37 @@
       margin: 0 auto;
     }
 
-    .section {
-      padding: 72px 0;
-    }
-
-    .hero {
-      padding: 96px 0 72px;
-    }
-
     .brand-bar {
-      padding-top: 18px;
+      padding-top: 16px;
     }
 
     .brand-wrap {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 16px;
-      padding: 14px 18px;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      width: fit-content;
+      gap: 12px;
       max-width: 100%;
+      padding: 12px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
     }
 
     .brand-logo {
-      width: 72px;
-      height: 72px;
+      width: 58px;
+      height: 58px;
       object-fit: contain;
-      border-radius: 14px;
-      flex-shrink: 0;
+      border-radius: 12px;
       background: rgba(255,255,255,.02);
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .brand-kicker {
-      font-size: .82rem;
-      letter-spacing: .08em;
-      color: var(--muted);
-      text-transform: uppercase;
+      flex-shrink: 0;
     }
 
     .brand-name {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
-      color: var(--text);
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 32px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 999px;
-      background: rgba(255,255,255,.03);
-      color: var(--warning);
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    h1, h2, h3, p { margin: 0; }
-
-    h1 {
-      font-size: clamp(2rem, 4vw, 4rem);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-      margin-bottom: 18px;
-    }
-
-    .accent {
-      color: var(--accent);
-    }
-
-    .hero p.lead {
-      color: var(--muted);
-      font-size: clamp(1rem, 1.8vw, 1.2rem);
-      max-width: 760px;
-      margin-bottom: 28px;
-    }
-
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-
-    .btn {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      min-height: 54px;
-      padding: 0 24px;
-      border-radius: 14px;
-      font-weight: 700;
-      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #08110b;
-      box-shadow: 0 12px 30px rgba(37, 211, 102, .22);
-    }
-
-    .btn-primary:hover {
-      background: var(--accent-dark);
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,.12);
-    }
-
-    .micro {
-      color: var(--muted);
-      font-size: .95rem;
+    .hero {
+      padding: 34px 0 32px;
     }
 
     .hero-card,
@@ -192,136 +86,204 @@
     }
 
     .hero-card {
-      padding: 28px;
+      padding: 34px;
+      text-align: center;
     }
 
-    .hero-card h3 {
-      font-size: 1.25rem;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      color: var(--warning);
+      font-size: 13px;
       margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
     }
 
-    .check-list {
-      display: grid;
-      gap: 14px;
+    h1, h2, p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 4rem);
+      line-height: 1.03;
+      letter-spacing: -0.045em;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .accent { color: var(--accent); }
+
+    .lead {
       color: var(--muted);
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      max-width: 700px;
+      margin: 0 auto 22px;
     }
 
-    .check-item {
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .badge {
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      color: var(--text);
+      font-weight: 700;
+      font-size: .95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 58px;
+      padding: 0 26px;
+      border-radius: 16px;
+      border: none;
+      font-weight: 800;
+      font-size: 1rem;
+      text-align: center;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #08110b;
+      box-shadow: 0 14px 34px rgba(37,211,102,.24);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .cta-stack {
+      display: grid;
+      gap: 12px;
+      justify-content: center;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .micro {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .strong-note {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .security {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(37,211,102,.18);
+      background: rgba(37,211,102,.08);
+      color: var(--text);
+      font-size: .96rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section {
+      padding: 22px 0 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      padding: 26px;
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .item {
       display: grid;
       grid-template-columns: 28px 1fr;
       gap: 12px;
       align-items: start;
+      color: var(--muted);
     }
 
     .icon {
       width: 28px;
       height: 28px;
-      border-radius: 999px;
       display: inline-grid;
       place-items: center;
+      border-radius: 999px;
       font-weight: 700;
-      background: rgba(37,211,102,.12);
-      color: var(--accent);
-      border: 1px solid rgba(37,211,102,.25);
       flex-shrink: 0;
     }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
+    .icon-ok {
+      background: rgba(37,211,102,.12);
+      color: var(--accent);
+      border: 1px solid rgba(37,211,102,.25);
     }
 
-    .problem, .promise, .topics, .final-cta {
-      padding: 30px;
+    .icon-bad {
+      background: rgba(255,123,114,.10);
+      color: var(--danger);
+      border: 1px solid rgba(255,123,114,.2);
     }
 
-    h2 {
-      font-size: clamp(1.6rem, 2.4vw, 2.5rem);
-      line-height: 1.1;
-      margin-bottom: 14px;
-      letter-spacing: -0.03em;
-    }
-
-    .section p.intro {
-      color: var(--muted);
-      margin-bottom: 16px;
-      max-width: 760px;
-    }
-
-    .bullets {
-      display: grid;
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .bullet {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: var(--muted);
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 26px;
-    }
-
-    .stat {
-      padding: 20px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.07);
-      background: rgba(255,255,255,.03);
+    .mini-cta {
+      margin-top: 20px;
       text-align: center;
     }
 
-    .stat strong {
-      display: block;
-      font-size: 1.8rem;
-      margin-bottom: 6px;
-      color: var(--accent);
-    }
-
-    .topics-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 20px;
-    }
-
-    .topic {
-      padding: 18px;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 16px;
-      background: rgba(255,255,255,.025);
-      color: var(--muted);
-    }
-
-    .topic strong {
-      display: block;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
-
-    .final-cta {
+    .final {
+      padding: 28px;
+      margin-top: 22px;
       text-align: center;
       background:
         radial-gradient(circle at center, rgba(37,211,102,.12), transparent 45%),
         linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
     }
 
-    .final-cta p {
-      color: var(--muted);
-      max-width: 760px;
-      margin: 0 auto 24px;
-    }
-
-    .cta-note {
-      margin-top: 14px;
-      font-size: .95rem;
-      color: var(--muted);
+    footer {
+      padding: 22px 0 96px;
+      color: #8d96a6;
+      text-align: center;
+      font-size: .92rem;
     }
 
     .sticky-bar {
@@ -329,12 +291,10 @@
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 40;
-      background: rgba(13, 15, 20, .92);
+      z-index: 50;
+      background: rgba(13,16,21,.94);
       border-top: 1px solid rgba(255,255,255,.08);
       backdrop-filter: blur(12px);
-      transform: translateY(0);
-      transition: transform .25s ease;
     }
 
     .sticky-inner {
@@ -342,37 +302,24 @@
       margin: 0 auto;
       padding: 10px 0;
       display: flex;
-      gap: 14px;
       align-items: center;
       justify-content: space-between;
+      gap: 14px;
     }
 
     .sticky-copy {
-      font-size: .95rem;
       color: var(--muted);
+      font-size: .95rem;
     }
 
     .hidden {
       transform: translateY(110%);
+      transition: transform .25s ease;
     }
 
-    footer {
-      padding: 24px 0 94px;
-      color: #8d96a6;
-      font-size: .92rem;
-      text-align: center;
-    }
-
-    @media (max-width: 920px) {
-      .hero-grid,
-      .grid-2,
-      .topics-grid,
-      .stats {
+    @media (max-width: 820px) {
+      .grid {
         grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 72px;
       }
 
       .sticky-inner {
@@ -386,254 +333,182 @@
     }
 
     @media (max-width: 560px) {
-      .section {
-        padding: 52px 0;
-      }
-
-      .brand-bar {
-        padding-top: 12px;
-      }
-
       .brand-wrap {
         width: 100%;
-        padding: 12px 14px;
-        gap: 12px;
-        border-radius: 16px;
       }
 
       .brand-logo {
-        width: 56px;
-        height: 56px;
-        border-radius: 12px;
-      }
-
-      .brand-kicker {
-        font-size: .74rem;
-        letter-spacing: .06em;
-      }
-
-      .brand-name {
-        font-size: .98rem;
-        line-height: 1.2;
+        width: 52px;
+        height: 52px;
       }
 
       .hero {
-        padding-top: 42px;
-        padding-bottom: 44px;
+        padding-top: 24px;
+      }
+
+      .hero-card,
+      .box,
+      .final {
+        padding: 22px;
       }
 
       h1 {
         font-size: clamp(1.9rem, 8vw, 2.5rem);
-        line-height: 1.08;
+        line-height: 1.06;
       }
 
       h2 {
-        font-size: clamp(1.45rem, 6vw, 2rem);
+        font-size: clamp(1.4rem, 6vw, 1.9rem);
       }
 
-      .eyebrow {
-        font-size: 12px;
-        padding: 8px 12px;
-        line-height: 1.35;
-      }
-
-      .hero p.lead,
-      .section p.intro,
-      .topic,
+      .lead,
+      .intro,
+      .item,
       .micro,
-      .cta-note,
-      .sticky-copy,
-      .bullet {
+      .security,
+      .sticky-copy {
         font-size: .97rem;
-      }
-
-      .problem, .promise, .topics, .final-cta, .hero-card {
-        padding: 22px;
       }
 
       .btn {
         width: 100%;
-        min-height: 52px;
+        min-height: 54px;
         padding: 14px 18px;
-        text-align: center;
-      }
-
-      .cta-row {
-        align-items: stretch;
-      }
-
-      .sticky-inner {
-        padding: 10px 0 12px;
-        gap: 10px;
-      }
-
-      .sticky-copy {
-        line-height: 1.35;
       }
 
       footer {
-        padding-bottom: 108px;
+        padding-bottom: 112px;
       }
     }
   </style>
 </head>
 <body>
+
   <div class="container brand-bar">
     <div class="brand-wrap">
       <img class="brand-logo" src="/assets/Logo Final.png" alt="Logo JB Formación Electromecánica Automotriz" />
-      <div class="brand-text">
-        <span class="brand-name">JB Formación Electromecánica Automotriz</span>
-      </div>
+      <div class="brand-name">JB Formación Electromecánica Automotriz</div>
     </div>
   </div>
 
   <header class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">JB FORMACIÓN ELECTROMECÁNICA AUTOMOTRIZ · MASTERCLASS GRATUITA</div>
+    <div class="container">
+      <div class="hero-card">
+        <div class="eyebrow">Masterclass gratuita · Miércoles 19:30 hs</div>
+
         <h1>
           Cómo diagnosticar fallas eléctricas en vehículos
-          <span class="accent">SIN cambiar piezas innecesarias</span>
+          <span class="accent">sin cambiar piezas innecesarias</span>
         </h1>
+
         <p class="lead">
-          Vas a ver un método lógico para encontrar fallas eléctricas y electrónicas paso a paso,
-          evitando diagnósticos por prueba y error que hacen perder tiempo, dinero y confianza.
+          Vas a ver una forma más lógica de encarar fallas eléctricas y electrónicas,
+          evitando perder tiempo en pruebas sin rumbo.
         </p>
 
-        <div class="cta-row">
-          <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
-            Entrar al grupo privado de WhatsApp
+        <div class="badges">
+          <div class="badge">📅 Miércoles 19:30 hs</div>
+          <div class="badge">💻 Clase online</div>
+          <div class="badge">🎟 Gratis</div>
+        </div>
+
+        <div class="cta-stack">
+          <a class="btn btn-primary" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
+            Entrar al grupo de WhatsApp
           </a>
-          <a class="btn btn-secondary" href="#temario">Ver qué incluye</a>
         </div>
 
-        <p class="micro">
-          Al ingresar al grupo vas a recibir el acceso a la clase, recordatorios y la información necesaria.
+        <p class="micro" style="margin-top:14px;">
+          <span class="strong-note">Importante:</span> el acceso a la clase se enviará dentro del grupo.
         </p>
-      </div>
 
-      <aside class="hero-card">
-        <h3>En esta clase vas a descubrir cómo:</h3>
-        <div class="check-list">
-          <div class="check-item">
-            <span class="icon">✓</span>
-            <span>Detectar la falla real sin empezar a cambiar piezas porque sí.</span>
-          </div>
-          <div class="check-item">
-            <span class="icon">✓</span>
-            <span>Seguir un proceso paso a paso para no perder horas en diagnósticos largos.</span>
-          </div>
-          <div class="check-item">
-            <span class="icon">✓</span>
-            <span>Trabajar con más seguridad frente al cliente y evitar derivar vehículos por no saber por dónde empezar.</span>
-          </div>
-          <div class="check-item">
-            <span class="icon">✓</span>
-            <span>Entender por qué este rubro crece cada vez más con el avance de la electrónica automotriz.</span>
-          </div>
+        <div class="security">
+          <strong>Grupo silencioso.</strong> Solo se usa para enviar el link de la clase, recordatorios y avisos importantes.
         </div>
-      </aside>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="section">
-      <div class="container grid-2">
-        <article class="card problem">
-          <h2>Si trabajás con autos, probablemente esto te resulte familiar</h2>
-          <p class="intro">
-            Entra un vehículo con una falla. Probás una cosa, después otra, cambiás piezas y el problema sigue.
-            El cliente empieza a molestarse, el auto ocupa lugar en el taller y el diagnóstico se vuelve frustración.
-          </p>
-          <div class="bullets">
-            <div class="bullet"><span class="icon">!</span><span>Se pierden horas valiosas del taller en pruebas sin resultado claro.</span></div>
-            <div class="bullet"><span class="icon">!</span><span>El cliente siente que gasta plata sin entender qué está pasando.</span></div>
-            <div class="bullet"><span class="icon">!</span><span>Muchas veces se termina derivando el vehículo o ni siquiera se toma el trabajo.</span></div>
-          </div>
-        </article>
-
-        <article class="card promise">
-          <h2>El problema no siempre es el auto. Muchas veces es no tener un proceso.</h2>
-          <p class="intro">
-            El diagnóstico eléctrico y electrónico no debería ser adivinar. Los sistemas tienen lógica.
-            Cuando aprendés a seguir un método, encontrás la falla con más criterio y menos improvisación.
-          </p>
-          <div class="bullets">
-            <div class="bullet"><span class="icon">✓</span><span>Más claridad para encarar cada diagnóstico.</span></div>
-            <div class="bullet"><span class="icon">✓</span><span>Menos cambios de piezas innecesarios.</span></div>
-            <div class="bullet"><span class="icon">✓</span><span>Más confianza tuya y mejor percepción del cliente.</span></div>
-          </div>
-
-          <div class="stats">
-            <div class="stat">
-              <strong>MÁS</strong>
-              electrónica en los vehículos
-            </div>
-            <div class="stat">
-              <strong>MENOS</strong>
-              prueba y error en el taller
-            </div>
-            <div class="stat">
-              <strong>MEJOR</strong>
-              criterio para diagnosticar
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="temario">
       <div class="container">
-        <article class="card topics">
-          <h2>Qué vas a ver en la masterclass</h2>
-          <p class="intro">
-            Una clase pensada para quienes ya están en el taller y también para quienes quieren meterse en una profesión
-            con cada vez más demanda por el crecimiento de la electromecánica automotriz.
-          </p>
+        <div class="grid">
+          <article class="card box">
+            <h2>Si te pasa esto, esta clase es para vos</h2>
+            <p class="intro">
+              Muchos diagnósticos se traban no por falta de ganas, sino por no tener un proceso claro.
+            </p>
 
-          <div class="topics-grid">
-            <div class="topic">
-              <strong>Diagnóstico paso a paso</strong>
-              Cómo encarar una falla sin depender de intuición o de cambiar piezas al azar.
+            <div class="list">
+              <div class="item">
+                <span class="icon icon-bad">!</span>
+                <span>No sabés por dónde empezar a revisar una falla.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-bad">!</span>
+                <span>Perdés tiempo probando cosas y la falla sigue.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-bad">!</span>
+                <span>Terminás cambiando piezas innecesarias.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-bad">!</span>
+                <span>Algunos trabajos eléctricos se terminan derivando.</span>
+              </div>
             </div>
-            <div class="topic">
-              <strong>Lógica del sistema</strong>
-              Cómo entender mejor el funcionamiento eléctrico y electrónico del vehículo.
-            </div>
-            <div class="topic">
-              <strong>Errores frecuentes</strong>
-              Qué suele hacer perder tiempo en el taller y cómo evitarlo.
-            </div>
-            <div class="topic">
-              <strong>Oportunidad del rubro</strong>
-              Por qué cada vez se necesitan más personas que sepan diagnosticar correctamente.
-            </div>
-          </div>
+          </article>
 
-          <div class="cta-row" style="margin-top: 28px;">
-            <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
-              Quiero entrar al grupo de WhatsApp
-            </a>
-          </div>
-          <p class="micro">Entrás al grupo y ahí recibís el acceso y toda la información de la clase.</p>
-        </article>
-      </div>
-    </section>
+          <article class="card box">
+            <h2>En la clase vas a ver cómo empezar a resolver mejor</h2>
+            <p class="intro">
+              No se trata de adivinar. Se trata de aprender a pensar la falla con lógica.
+            </p>
 
-    <section class="section">
-      <div class="container">
-        <article class="card final-cta">
-          <h2>Reservá tu lugar y recibí toda la información en WhatsApp</h2>
+            <div class="list">
+              <div class="item">
+                <span class="icon icon-ok">✓</span>
+                <span>Cómo encarar un diagnóstico paso a paso.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-ok">✓</span>
+                <span>Qué errores hacen perder horas en el taller.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-ok">✓</span>
+                <span>Cómo trabajar con más criterio técnico.</span>
+              </div>
+              <div class="item">
+                <span class="icon icon-ok">✓</span>
+                <span>Por qué este rubro tiene cada vez más demanda.</span>
+              </div>
+            </div>
+
+            <div class="mini-cta">
+              <a class="btn btn-primary" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
+                Quiero recibir el acceso
+              </a>
+              <p class="micro" style="margin-top:12px;">
+                Entrás al grupo y ahí te llega toda la info.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <article class="card final">
+          <h2>Reservá tu lugar ahora</h2>
           <p>
-            Hacé clic en el botón, ingresá al grupo privado y quedate atento a los recordatorios, el acceso a la clase
-            y las novedades de esta masterclass gratuita.
+            Hacé clic, entrá al grupo privado y quedate atento.
+            Ahí vas a recibir el acceso a la masterclass y los recordatorios.
           </p>
-          <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
+
+          <a class="btn btn-primary" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
             Entrar ahora al grupo privado
           </a>
-          <div class="cta-note">
-            Grupo orientado a compartir acceso, avisos y contenido relacionado con la masterclass.
-          </div>
+
+          <p class="micro" style="margin-top:14px;">
+            El link de la clase se comparte dentro del grupo.
+          </p>
         </article>
       </div>
     </section>
@@ -645,28 +520,28 @@
 
   <div class="sticky-bar" id="stickyBar">
     <div class="sticky-inner">
-      <div class="sticky-copy">Entrá al grupo privado de WhatsApp y recibí el acceso a la masterclass.</div>
-      <a class="btn btn-primary js-whatsapp" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
-        Entrar al grupo
+      <div class="sticky-copy">El acceso a la clase se enviará dentro del grupo de WhatsApp.</div>
+      <a class="btn btn-primary" href="https://chat.whatsapp.com/Dqz6jPew0NS0siaMmyUaMv" target="_blank" rel="noopener noreferrer">
+        Entrar al grupo de WhatsApp
       </a>
     </div>
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    const stickyBar = document.getElementById('stickyBar');
+    const stickyBar = document.getElementById("stickyBar");
     let lastScroll = window.scrollY;
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const currentScroll = window.scrollY;
 
       if (currentScroll < 120) {
-        stickyBar.classList.remove('hidden');
+        stickyBar.classList.remove("hidden");
       } else if (currentScroll > lastScroll && currentScroll > 220) {
-        stickyBar.classList.add('hidden');
+        stickyBar.classList.add("hidden");
       } else {
-        stickyBar.classList.remove('hidden');
+        stickyBar.classList.remove("hidden");
       }
 
       lastScroll = currentScroll;
